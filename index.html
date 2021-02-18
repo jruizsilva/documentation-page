@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>JS Documentacion</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<nav id="navbar">
+			<header class="navbar_header">
+				<h2 class="header-title">JS Documentacion</h2>
+			</header>
+			<ul class="navbar__ul">
+				<li class="navbar__item"><a href="#Introdución_a_JavaScript" class="nav-link navbar__link">Introdución a JavaScript</a></li>
+				<li class="navbar__item"><a href="#Variables" class="nav-link navbar__link">Variables</a></li>
+				<li class="navbar__item"><a href="#Comentarios" class="nav-link navbar__link">Comentarios</a></li>
+				<li class="navbar__item"><a href="#Condicionales" class="nav-link navbar__link">Condicionales</a></li>
+				<li class="navbar__item"><a href="#Funciones" class="nav-link navbar__link">Funciones</a></li>
+			</ul>
+		</nav>
+		<main id="main-doc">
+			<section class="main-section" id="Introdución_a_JavaScript">
+				<header>
+					<h1>Introdución a JavaScript</h1>
+				</header>
+				<p>JavaScript es el lenguaje de programación que debes usar para añadir características interactivas a
+					tu sitio web, (por ejemplo, juegos, eventos que ocurren cuando los botones son presionados o los
+					datos son introducidos en los formularios, efectos de estilo dinámicos, animación, y mucho más).
+					Este artículo te ayudará a comenzar con este lenguaje extraordinario y te dará una idea de qué es
+					posible hacer con él.</p>
+				<h2>¿Qué es JavaScript realmente?</h2>
+				<p>JavaScript es un robusto lenguaje de programación que se puede aplicar a un documento HTML y usarse
+					para crear interactividad dinámica en los sitios web. Fue inventado por Brendan Eich, cofundador del
+					proyecto Mozilla, Mozilla Foundation y la Corporación Mozilla.</p>
+				<p>Puedes hacer casi cualquier cosa con JavaScript. Puedes empezar con pequeñas cosas como carruseles,
+					galerías de imágenes, diseños fluctuantes, y respuestas a las pulsaciones de botones. Con más
+					experiencia, serás capaz de crear juegos, animaciones 2D y gráficos 3D, aplicaciones integradas
+					basadas en bases de datos ¡y mucho más!
+
+				</p>
+				<p>JavaScript por sí solo es bastante compacto aunque muy flexible, y los desarrolladores han escrito
+					gran cantidad de herramientas encima del núcleo del lenguaje JavaScript, desbloqueando una gran
+					cantidad de funcionalidad adicional con un mínimo esfuerzo. Esto incluye:
+
+				</p>
+				<ul>
+					<li>
+						<p>Interfaces de Programación de Aplicaciones del Navegador (APIs) — APIs construidas dentro de
+							los navegadores que ofrecen funcionalidades como crear dinámicamente contenido HTML y
+							establecer estilos CSS, hasta capturar y manipular un vídeo desde la cámara web del usuario,
+							o generar gráficos 3D y muestras de sonido.
+						</p>
+					</li>
+					<li>
+						<p>APIs de terceros, que permiten a los desarrolladores incorporar funcionalidades en sus sitios
+							de otros proveedores de contenidos como Twitter o Facebook.
+						</p>
+					</li>
+					<li>
+						<p>Marcos de trabajo y librerías de terceros que puedes aplicar a tu HTML para que puedas
+							construir y publicar rápidamente sitios y aplicaciones.
+						</p>
+					</li>
+				</ul>
+				<h2>Ejemplo «¡Hola Mundo!»</h2>
+				<p>Para comenzar, mostraremos cómo añadir JavaScript básico a tu página, creando un «¡Hola Mundo!» de
+					ejemplo</p>
+				<ol>
+					<li>
+						<p>Primero, ve a tu sitio de pruebas y crea una carpeta llamada <code class="inline-code">scripts</code>. Luego,
+							dentro de la nueva carpeta de scripts, crea un nuevo archivo llamado <code class="inline-code">main.js</code> y
+							guárdalo.</p>
+
+					</li>
+					<li>
+						<p>A continuación, abre tu archivo <code class="inline-code">index.html</code> e introduce el siguiente código en
+							una nueva línea, justo antes de la etiqueta de cierre del <code class="inline-code">&lt;/body&gt;</code>:</p>
+						<code class="block-code"> &lt;script src="scripts/main.js"&gt;&lt;/script&gt;
+				</pre></code>
+					</li>
+					<li>
+						<p>Esto hace básicamente el mismo trabajo que el elemento <code class="inline-code">&lt;link&gt;</code> para CSS:
+							aplica el código JavaScript a la página, para que pueda actuar sobre el HTML (y CSS, o
+							cualquier cosa en la página).</p>
+					</li>
+					<li>
+						<p>Ahora añade el siguiente código al archivo <code class="inline-code">main.js</code>:
+						</p>
+						<code class="block-code">const miTitulo = document.querySelector('h1');
+				miTitulo.textContent = '¡Hola mundo!';</code>
+					</li>
+					<li>
+						<p>
+							Finalmente, asegúrate de que has guardado los archivos HTML y JavaScript, y abre index.html
+							en el navegador. Deberías ver algo así:
+						</p>
+						<img src="https://mdn.mozillademos.org/files/9543/hello-world.png" alt="" class="img-hello-world">
+					</li>
+				</ol>
+			</section>
+			<section class="main-section" id="Variables">
+				<header>
+					<h2>Variables</h2>
+				</header>
+				<p>Las Variables son contenedores en los que puedes almacenar valores. Primero debes declarar la
+					variable con la palabra clave var (menos recomendado) o let, seguida del nombre que le quieras dar.
+					Se recomienda más el uso de let que de var (más adelante se profundiza un poco sobre esto):</p>
+				<code class="inline-code">let nombreDeLaVariable;</code>
+				<p>Tras declarar una variable, puedes asignarle un valor:
+				</p>
+				<code class="block-code">nombreDeLaVariable = 'Bob';</code>
+				<p>Puedes hacer las dos cosas en la misma línea si lo necesitas:
+
+				</p>
+				<code class="block-code">let nombreDeLaVariable = 'Bob';
+				</code>
+				<p>Después de haberle dado un valor a la variable, puedes volver a cambiarlo:
+
+				</p>
+				<code class="block-code">let nombreDeLaVariable = 'Bob';
+				nombreDeLaVariable = 'Steve';</code>
+
+			</section>
+			<section class="main-section" id="Comentarios">
+				<header>
+					<h2>Comentarios</h2>
+				</header>
+				<p>Puedes escribir comentarios entre el código JavaScript, igual que puedes en CSS. El navegador ignora
+					el texto marcado como comentario. En JavaScript, los comentarios de una sola línea se escriben así:
+				</p>
+				<code class="block-code">// Esto es un comentario</code>
+				<p>Pero también puedes escribir comentarios en más de una línea, igual que en CSS:
+
+				</p>
+				<code class="block-code">/*
+				Esto es un comentario
+				de varias líneas.
+				*/</code>
+			</section>
+			<section class="main-section" id="Condicionales">
+				<header>
+					<h2>Condicionales</h2>
+				</header>
+				<p>Las condicionales son estructuras de código que permiten comprobar si una expresión devuelve true o
+					no, y después ejecuta un código diferente dependiendo del resultado. La forma de condicional más
+					común es la llamada if... else. Entonces, por ejemplo:</p>
+				<code class="block-code">let helado = 'chocolate';
+				if (helado === 'chocolate') {
+				alert('¡Sí, amo el helado de chocolate!');
+				} else {
+				alert('Awwww, pero mi favorito es el de chocolate...');
+				}</code>
+				<p>La expresión dentro de if (... ) es el criterio — este usa al operador de identidad (descrito arriba)
+					para comparar la variable helado con la cadena chocolate para ver si las dos son iguales. Si esta
+					comparación devuelve true, el primer bloque de código se ejecuta. Si no, ese código se omite y se
+					ejecuta el segundo bloque de código después de la declaración else.</p>
+			</section>
+			<section class="main-section" id="Funciones">
+				<header>
+					<h2>Funciones</h2>
+				</header>
+				<p>Las funciones son una manera de encapsular una funcionalidad que quieres reutilizar, de manera que
+					puedes llamar esa función con un solo nombre, y no tendrás que escribir el código entero cada vez
+					que la utilices. Ya has visto algunas funciones más arriba, por ejemplo:</p>
+				<code class="block-code">let nombreDeLaVariable = document.querySelector('h1');</code>
+				<code class="block-code">alert('¡Hola!');</code>
+				<p>Estas funciones document.querySelector y alert están integradas en el navegador para poder
+					utilizarlas en cualquier momento.</p>
+				<p>Si ves algo que parece un nombre de variable, pero tiene paréntesis —()— al final, probablemente es
+					una función. Las funciones con frecuencia toman argumentos —pedazos de datos que necesitan para
+					hacer su trabajo—. Estos se colocan dentro de los paréntesis, y se separan con comas si hay más de
+					uno.</p>
+				<p>Por ejemplo, la función alert() hace aparecer una ventana emergente dentro de la ventana del
+					navegador, pero necesitas asignarle una cadena como argumento para decirle qué mensaje se debe
+					escribir en la ventana emergente.</p>
+				<p>Las buenas noticias son que podemos definir nuestras propias funciones —en el siguiente ejemplo
+					escribimos una función simple que toma dos números como argumentos y los multiplica entre sí—:</p>
+				<code class="block-code">
+				function multiplica(num1,num2) {
+				let resultado = num1 * num2;
+				return resultado;
+				}
+				</code>
+				<p>Trata de ejecutar la función anterior en la consola. Después trata de usar la nueva función algunas
+					veces, p.ej:</p>
+				<code class="block-code">multiplica(4, 7);
+				multiplica(20, 20);
+				multiplica(0.5, 3);</code>
+			</section>
+		</main>
+	</div>
+	<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+
+</body>
+
+</html>
