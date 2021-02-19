@@ -1,8 +1,9 @@
-# Tribute Page
+# Tribute Page FFC
 
-## FreeCodeCamp Project #1
+## Responsive Web Design Project #4
 
-Este es el cuarto projecto propuesto por freeCodeCamp es un plan de estudios
+Este es el cuarto projecto del curso Responsive Web Design propuesto por freeCodeCamp es un plan de estudios.
+
 Las tecnologias utilizadas fueron:
 
 - HTML
