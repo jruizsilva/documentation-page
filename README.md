@@ -2,7 +2,7 @@
 
 ## FreeCodeCamp Project #1
 
-Este es el primer projecto propuesto por freeCodeCamp es un plan de estudios
+Este es el cuarto projecto propuesto por freeCodeCamp es un plan de estudios
 Las tecnologias utilizadas fueron:
 
 - HTML
