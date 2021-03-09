@@ -2,8 +2,6 @@
 
 ## Responsive Web Design Project #4
 
-Este es el cuarto projecto del curso Responsive Web Design propuesto por freeCodeCamp es un plan de estudios.
-
 ### Build with:
 
 - HTML
